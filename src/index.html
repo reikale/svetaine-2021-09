@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Think of Motion</title>
+    <!-- NORMALIZE CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <!-- FONT AWESOME link -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <!-- Google fonts link -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- CSS file -->
+    <link rel="stylesheet" href="public/css/styles.css">
+
+  </head>
+  <body>
+<header>
+  <div class="logo">
+    <img class="logo__img" src="../public/images/LOGO_THM.png" alt="">
+  </div>
+  <!--{# <button class="nav-toggle" aria-label="toggle navigation"> #}
+    {# <span class="hamburger"></span> #}-->
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"> <a href="#home" class="nav__link">Apie</a> </li>
+        <li class="nav__item"> <a href="#portfolio" class="nav__link">Darbai</a> </li>
+        <li class="nav__item"> <a href="#contact" class="nav__link">Susisiekite</a> </li>
+      </ul>
+    </nav>
+  </button>
+</header>
+
+
+<!-- # https://www.youtube.com/watch?v=4wD00RT6d-g -->
+    <!-- Introduction  -->
+    <section class="intro" id="home">
+      <h2 class="section__title section__title--intro">
+      Edvinas <br>Reikalas
+      </h2>
+      <p class="section__subtitle section__subtitle--intro">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
+      <img class="intro__img" src="../public/images/edvinas.jpg" alt="">
+    </section>
+
+    <!-- Portfolio -->
+    <h2 class="section__title section__title--portfolio">Mano darbai</h2>
+    <section class="new-portfolio" id="portfolio">
+
+      <!-- Naujas gridas portfolio -->
+        <div class="container">
+          <div class="gallery">
+            <a href="../public/images/open-house.jpg" class="img-1 item__open-house-2020">
+              <ion-icon name="scan-outline"></ion-icon>
+            </a>
+            <a href="../public/images/givvery.jpg" class="img-2 item__givvery">
+              <ion-icon name="scan-outline"></ion-icon>
+            </a>
+            <a href="../public/images/hide-noses.jpg" class="img-3 item__hide-noses">
+              <ion-icon name="scan-outline"></ion-icon>
+            </a>
+            <a href="../public/images/open-house-2021.jpg" class="img-4 item__open-house-2021">
+              <ion-icon name="scan-outline"></ion-icon>
+            </a>
+            <a href="../public/images/h2auto.jpg" class="img-5 item__h2auto">
+              <ion-icon name="scan-outline"></ion-icon>
+            </a>
+            <a href="../public/images/laisve.jpg" class="img-6 item__laisve">
+              <ion-icon name="scan-outline"></ion-icon>
+            </a>
+            <a href="../public/images/s-bakas.jpg" class="img-7 item__s-bakas">
+              <ion-icon name="scan-outline"></ion-icon>
+            </a>
+
+          </div>
+        </div>
+    </section>
+
+    <!-- Contact me  -->
+    <section class="contact" id="contact">
+      <h2 class="section__title section__title--contact-me">Susisiekite</h2>
+     <div class="contact-me-form">
+
+        <form target="_blank" action="https://formsubmit.co/animation@thinkofmotion.com" method="POST" enctype="multipart/form-data">
+          <input type="hidden" name="_next" value="http://localhost:8080/">
+          <input type="hidden" name="_subject" value="ThinkOfMotion -- Nauja žinutė!">
+          <input type="hidden" name="_captcha" value="false">
+            <div class="form-group">
+                <div class="form-row">
+                    <div class="col">
+                        <input type="text" name="name" class="form-control" placeholder="Vardas" required>
+                    </div>
+                    <div class="col">
+                        <input type="email" name="email" class="form-control" placeholder="El. paštas" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                  <input type="file" name="attachment" accept="image/png, image/jpeg, image/gif">
+                </div>
+            </div>
+            <div class="form-group">
+                <textarea placeholder="Žinutė" class="form-control" name="message" rows="10" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-lg btn-dark btn-block">Siųsti</button>
+        </form>
+    </div>
+
+       <!-- IDEA: Here should be a form to leave a message -->
+    </section>
+<!-- Footer -->
+<footer class="footer">
+
+  <ul class="social-list">
+    <li class="social-list__item">
+      <a class="social-list__link" href="https://www.instagram.com/thinkofmotion/">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </li>
+    <li class="social-list__item">
+      <a class="social-list__link" href="https://www.behance.net/EdvinasRei">
+      <i class="fab fa-behance-square"></i>
+    </a>
+    </li>
+  <li class="social-list__item">
+    <a class="social-list__link" href="https://www.facebook.com/edvinas.reikalas">
+    <i class="fab fa-facebook"></i>
+  </a>
+  </li>
+  </ul>
+  <p class="copyright">© 2021 ThinkOfMotion</p>
+</footer>
+<script src="src/index.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </body>
+  </html>

@@ -1,0 +1,21 @@
+backend:
+  name: git-gateway
+  branch: main
+media_folder: "public/images"
+public_folder: "/images"
+permalink: flase
+collections:
+    - name: "website"
+      label: "website"
+      folder: "src/webpages"
+      create: true
+      slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+      fields:
+        - { label: "Title", name: "title", widget: "string" }
+        - { label: "Description", name: "description", widget: "string" }
+        - { label: "Author", name: "author", widget: "string" }
+        - { label: "Cover Image", name: "image", widget: "image" }
+        - { label: "Image Caption", name: "imageAlt", widget: "string" }
+        - { label: "Tags", name: "tags", widget: "list", default: ["animation"] }
+        - { label: "Tools", name: "tools", widget: "select", multiple: true, options: ["Adobe Illustrator", "Adobe After Effects", "Adobe Photoshop", "Blender"] }
+        - { label: "Body", name: "body", widget: "markdown" }

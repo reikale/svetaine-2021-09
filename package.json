@@ -1,0 +1,27 @@
+{
+  "name": "website3.0",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reikale/website3.0.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/reikale/website3.0/issues"
+  },
+  "homepage": "https://github.com/reikale/website3.0#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1"
+  },
+  "dependencies": {
+    "eleventy-plugin-page-assets": "^0.3.0"
+  }
+}

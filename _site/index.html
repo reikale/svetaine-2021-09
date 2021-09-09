@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Think of Motion</title>
+    <!-- NORMALIZE CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <!-- FONT AWESOME link -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <!-- Google fonts link -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- CSS file -->
+    <link rel="stylesheet" href="public/css/styles.css">
+
+  </head>
+  <body>
+    <header>
+  <div class="logo">
+    <img class="logo__img" src="images/LOGO_THM.png" alt="">
+  </div>
+  <button class="nav-toggle" aria-label="toggle navigation">
+    <span class="hamburger"></span>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"> <a href="#home" class="nav__link">Apie</a> </li>
+        <li class="nav__item"> <a href="#portfolio" class="nav__link">Darbai</a> </li>
+        <li class="nav__item"> <a href="#about-me" class="nav__link">Susisiekite</a> </li>
+      </ul>
+    </nav>
+  </button>
+</header>
+
+    <main>
+      <!-- # https://www.youtube.com/watch?v=4wD00RT6d-g -->
+    <!-- Introduction  -->
+    <section class="intro" id="home">
+      <h1 class="section__title section__title--intro">
+        Sveiki, aš esu <strong>Edvinas Reikalas</strong>
+      </h1>
+      <p class="section__subtitle section__subtitle--intro">animatorius, kūrėjas</p>
+      <img class="intro__img" src="/images/edvinas.jpg" alt="">
+    </section>
+
+    <!-- Portfolio -->
+    <section class="portfolio" id="portfolio">
+      <h2 class="section__title section__title--portfolio">Mano darbai</h2>
+      <div class="portfolio--items-list">
+
+          <!-- Portfolio item 01 -->
+        <div class="portfolio--item">
+          <!-- <h3 class="section__subtitle--portfolio">Hide Your Noses</h3> -->
+          <a href="#" class="portfolio">
+            <img src="images/hide-noses.jpg" alt="" class="portfolio__img">
+          </a>
+          <p></p>
+        </div> <!-- item-->
+
+          <!-- Portfolio item 02 -->
+        <div class="portfolio--item">
+          <!-- <h3 class="section__subtitle--portfolio">Laisvė</h3> -->
+          <a href="#" class="portfolio">
+            <img src="images/laisve.jpg" alt="" class="portfolio__img">
+          </a>
+          <p></p>
+        </div> <!-- item-->
+
+          <!-- Portfolio item 03 -->
+        <div class="portfolio--item">
+          <!-- <h3 class="section__subtitle--portfolio">Giverry</h3> -->
+          <a href="#" class="portfolio">
+            <img src="images/givvery.jpg" alt="" class="portfolio__img">
+          </a>
+          <p></p>
+        </div> <!-- item-->
+
+          <!-- Portfolio item 04 -->
+        <div class="portfolio--item">
+          <!-- <h3 class="section__subtitle--portfolio">H2AUTO</h3> -->
+          <a href="#" class="portfolio">
+            <img src="images/h2auto.jpg" alt="" class="portfolio__img">
+          </a>
+          <p></p>
+        </div> <!-- item-->
+
+          <!-- Portfolio item 05 -->
+        <div class="portfolio--item">
+          <!-- <h3 class="section__subtitle--portfolio">Open House 2020</h3> -->
+          <a href="#" class="portfolio">
+            <img src="images/open-house.jpg" alt="" class="portfolio__img">
+          </a>
+          <p></p>
+        </div> <!-- item-->
+
+          <!-- Portfolio item 06 -->
+        <div class="portfolio--item">
+          <!-- <h3 class="section__subtitle--portfolio">Open House 2021</h3> -->
+          <a href="#" class="portfolio">
+            <img src="images/open-house-2021.jpg" alt="" class="portfolio__img">
+          </a>
+          <p></p>
+        </div> <!-- item-->
+
+          <!-- Portfolio item 07 -->
+        <div class="portfolio--item">
+          <!-- <h3 class="section__subtitle--portfolio">Samuelio Bako keliu</h3> -->
+          <a href="#" class="portfolio">
+            <img src="images/s-bakas.jpg" alt="" class="portfolio__img">
+          </a>
+          <p></p>
+        </div> <!-- item-->
+
+      </div> <!-- items list-->
+
+    </section>
+
+    <!-- About me -->
+    <section class="about-me" id="about-me">
+      <h2 class="section__title section__title--about-me">Apie mane</h2>
+      <img class="about-me__img" src="images/Edvinas2.jpg" alt="">
+      <p class="section__subtitle section__subtitle--about-me">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
+      <div class="about-me__body">
+        <p></p>
+        <p></p>
+      </div>
+    </section>
+
+    <!-- Contact me  -->
+    <section class="contact" id="contact">
+      <h2 class="section__title section__title--contact-me">Susisiekite</h2>
+     <div class="contact-me-form">
+
+        <form target="_blank" action="https://formsubmit.co/tarabumbis99@gmail.com" method="POST" enctype="multipart/form-data">
+          <input type="hidden" name="_next" value="http://localhost:8080/">
+          <input type="hidden" name="_subject" value="ThinkOfMotion -- Nauja žinutė!">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="text" name="_honey" style="display:none">
+            <div class="form-group">
+                <div class="form-row">
+                    <div class="col">
+                        <input type="text" name="name" class="form-control" placeholder="Vardas" required>
+                    </div>
+                    <div class="col">
+                        <input type="email" name="email" class="form-control" placeholder="El. paštas" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                  <input type="file" name="attachment" accept="image/png, image/jpeg, image/gif">
+                </div>
+            </div>
+            <div class="form-group">
+                <textarea placeholder="Žinutė" class="form-control" name="message" rows="10" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-lg btn-dark btn-block">Siųsti</button>
+        </form>
+    </div>
+
+       <!-- IDEA: Here should be a form to leave a message -->
+    </section>
+
+    </main>
+    <!-- Footer -->
+<footer class="footer">
+  
+  <ul class="social-list">
+    <li class="social-list__item">
+      <a class="social-list__link" href="https://www.instagram.com/thinkofmotion/">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </li>
+    <li class="social-list__item">
+      <a class="social-list__link" href="https://www.behance.net/EdvinasRei">
+      <i class="fab fa-behance-square"></i>
+    </a>
+    </li>
+  <li class="social-list__item">
+    <a class="social-list__link" href="https://www.facebook.com/edvinas.reikalas">
+    <i class="fab fa-facebook"></i>
+  </a>
+  </li>
+  </ul>
+</footer>
+
+    <script src="src/index.js"></script>
+  </body>
+  </html>
